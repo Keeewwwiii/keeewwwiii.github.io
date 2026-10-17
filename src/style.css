@@ -161,9 +161,21 @@ header {
     min-height: 90svh;
     padding-block: calc(var(--nav-height) + 48px) 64px;
     border-bottom: 1px solid #333;
+
+
+    /*https://codepen.io/edmundojr/pen/xOYJGw*/
+    --dot-color: rgb(156, 156, 156);
+    --dot-size: 1px;
+    --dot-space: 22px;
+    background:
+          linear-gradient(90deg, var(--primary-color) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          linear-gradient(var(--primary-color) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          var(--dot-color);
+  
 }
 
 .start-content {
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -237,22 +249,15 @@ h1 {
 
 /*sections */
 
-.section-head {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: clamp(24px, 5vw, 64px);
-
-}
-
-
 .section-label {
     margin-bottom: 20px;
     color: #aaa;
+
     font-size: 0.7rem;
 
-    font-weight: 700;
-    letter-spacing: 0.14em;
+    font-weight: 900;
+    
+    letter-spacing: -0.04em;
 
     text-transform: uppercase;
 }
@@ -262,6 +267,19 @@ h1 {
     line-height: 0.98;
     letter-spacing: -0.065em;
 
+}
+
+
+/*Projects*/
+.section-project{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: clamp(24px, 5vw, 64px);
+}
+
+.dot{
+    color: var(--accent-color);
 }
 
 .section-intro {
