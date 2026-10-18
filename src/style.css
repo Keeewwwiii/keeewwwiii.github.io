@@ -7,7 +7,7 @@
 
     --colossal-color: #007bff;
     --cider-color: #ffd700;
-    --electron-color: #a000c8;
+    --umea-color: #19F483;
 
 }
 /*globals */
@@ -65,8 +65,8 @@ main {
     background-color: var(--cider-color);
 }
 
-.electron {
-    background-color: var(--electron-color);
+.umea {
+    background-color: var(--umea-color);
 }
 
 /* Header and nav */
