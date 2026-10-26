@@ -526,6 +526,14 @@ h1 {
     .section-intro {
         max-width: 55ch;
     }
+    .project-card{
+        min-height: 580px;
+        padding-bottom: 20px;
+        flex-direction: column;
+    }
+    .project-artwork{
+        height: 60%;
+    }
 }
 
 /* phones */
